@@ -4,10 +4,10 @@ server:
 spring:
     datasource:
         name: smallcorn
-        url: jdbc:mysql://localhost:3306/smallcorn&useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
-        username: root
-        password: root
-        # 使用druid数据源
+        url: jdbc:mysql://39.106.143.80:3306/smallcorn&useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+        username: smallcorn
+        password: smallcorn
+        #閰嶇疆druid鏁版嵁搴撹繛鎺ユ睜
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.jdbc.Driver
         filters: stat
@@ -27,7 +27,7 @@ mybatis:
   mapper-locations: classpath:mapping/*.xml
   type-aliases-package: com.smallcorn.bean
 
-#pagehelper分页插件
+#pagehelper閰嶇疆
 pagehelper:
     helperDialect: mysql
     reasonable: true
